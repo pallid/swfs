@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Умный сервис прогноза погоды</title>
+    </head>
+    <body>
+        <h3>Сервис прогноза погоды</h3>
+        <form method="GET">
+            <label>Местоположение</label><br>
+            <input type="text" name="location" value="{{.Location}}" />
+            <input type="submit" value="Прогноз" />
+        </form>
+        {{ if .Location -}}
+            {{ if .Successful}}
+                <p>{{.Location}}, {{.WeatherDescription}}, температура воздуха {{.TempMin}}...{{.TempMax}} &deg;C</p>
+                {{ if .RecommendationDescription -}}
+                    <p>{{.RecommendationDescription}}</p>
+                {{ end }}
+            {{ else }}
+                <p>Местоположение {{.Location}} не найдено, попробуйте еще раз</p>
+            {{ end }}
+        {{ end }}
+    </body>
+</html>

@@ -1,0 +1,4 @@
+github.com/briandowns/openweathermap v0.13.0 h1:Mt+fS6+3q7QjcPu5lNoOVpJQfzs62QJ78gd4QzoS+MA=
+github.com/briandowns/openweathermap v0.13.0/go.mod h1:8g1Bgq9PbPpXIA3sdlWmWf2JpiWGJee/O4Q+ddYO6+k=
+github.com/joho/godotenv v1.3.0 h1:Zjp+RcGpHhGlrMbJzXTrZZPrWj+1vfm90La1wgB6Bhc=
+github.com/joho/godotenv v1.3.0/go.mod h1:7hK45KPybAkOC6peb+G5yklZfMxEjkZhHbwpqxOKXbg=
